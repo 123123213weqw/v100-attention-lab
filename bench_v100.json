@@ -1,0 +1,52 @@
+{
+  "results": [
+    {
+      "B": 2,
+      "T": 1024,
+      "H": 16,
+      "K": 128,
+      "V": 128,
+      "ours_mode": "fixed(C32,BV32,w8)",
+      "ours_ms": 99.3463,
+      "fla_ms": 38.5785,
+      "ours_vs_fla_rel": 0.000649,
+      "sdpa_mha_ms": 0.9602
+    },
+    {
+      "B": 2,
+      "T": 4096,
+      "H": 16,
+      "K": 128,
+      "V": 128,
+      "ours_mode": "fixed(C32,BV32,w8)",
+      "ours_ms": 401.6678,
+      "fla_ms": 144.2694,
+      "ours_vs_fla_rel": 0.000711,
+      "sdpa_mha_ms": 12.8765
+    },
+    {
+      "B": 2,
+      "T": 16384,
+      "H": 16,
+      "K": 128,
+      "V": 128,
+      "ours_mode": "fixed(C32,BV32,w8)",
+      "ours_ms": 1318.7421,
+      "fla_ms": null,
+      "fla_error": "OutOfMemoryError: CUDA out of memory. Tried to allocate 256.00 MiB. GPU 0 has a total capacity of 31.73 GiB of which 178.25 MiB is free. Process 2843295 has 26.70 GiB m",
+      "sdpa_mha_ms": 209.9623
+    },
+    {
+      "B": 4,
+      "T": 4096,
+      "H": 16,
+      "K": 128,
+      "V": 128,
+      "ours_mode": "fixed(C32,BV32,w8)",
+      "ours_ms": 812.0726,
+      "fla_ms": 295.7312,
+      "ours_vs_fla_rel": 0.00073,
+      "sdpa_mha_ms": 22.1842
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "cross_check_deltanet_rel": 0.000509955279994756,
+  "rows": [
+    {
+      "B": 2,
+      "T": 1024,
+      "gdn_ours": 61.2306,
+      "gdn_fla": 23.1254,
+      "deltanet_fla": 20.4112,
+      "gla_fla": 1.06,
+      "retention_fla": 15.7183,
+      "mha_sdpa_full": 0.6073,
+      "mha_sdpa_causal": 0.3693
+    },
+    {
+      "B": 2,
+      "T": 4096,
+      "gdn_ours": 244.694,
+      "gdn_fla": 88.0295,
+      "deltanet_fla": 77.9561,
+      "gla_fla": 3.8232,
+      "retention_fla": 58.5708,
+      "mha_sdpa_full": 7.9853,
+      "mha_sdpa_causal": 4.4913
+    },
+    {
+      "B": 2,
+      "T": 16384,
+      "gdn_ours": 975.5819,
+      "gdn_fla": "OOM",
+      "deltanet_fla": "OOM",
+      "gla_fla": "OOM",
+      "retention_fla": 230.7063,
+      "mha_sdpa_full": 133.7864,
+      "mha_sdpa_causal": 66.9406
+    }
+  ]
+}
