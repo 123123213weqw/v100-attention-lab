@@ -1,0 +1,36 @@
+/home/test/attention-lab/venv/lib/python3.12/site-packages/torch/_subclasses/functional_tensor.py:377: UserWarning: Failed to initialize NumPy: No module named 'numpy' (Triggered internally at /__w/pytorch/pytorch/torch/csrc/utils/tensor_numpy.cpp:82.)
+  cpu = _conversion_method_template(device=torch.device("cpu"))
+/home/test/attention-lab/venv/lib/python3.12/site-packages/triton/knobs.py:504: UserWarning: TRITON_DEFAULT_FP_FUSION is unset: defaulting to FP fusion ENABLED for backward compatibility in Triton 3.9. The default will change to DISABLED in Triton 3.10; set TRITON_DEFAULT_FP_FUSION=1 to keep fusion enabled or =0 to adopt the new default early and silence this warning.
+  warn_once(FP_FUSION_DEFAULT_WARNING)
+{'C': 32, 'BV': 32, 'num_warps': 4, 'num_stages': 1, 'ms': 1.3817}
+{'C': 32, 'BV': 32, 'num_warps': 4, 'num_stages': 2, 'ms': 1.3816}
+{'C': 32, 'BV': 32, 'num_warps': 4, 'num_stages': 3, 'ms': 1.3821}
+{'C': 32, 'BV': 32, 'num_warps': 8, 'num_stages': 1, 'ms': 1.924}
+{'C': 32, 'BV': 32, 'num_warps': 8, 'num_stages': 2, 'ms': 1.9242}
+{'C': 32, 'BV': 32, 'num_warps': 8, 'num_stages': 3, 'ms': 1.9242}
+{'C': 32, 'BV': 64, 'num_warps': 4, 'num_stages': 1, 'ms': 1.6033}
+{'C': 32, 'BV': 64, 'num_warps': 4, 'num_stages': 2, 'ms': 1.6026}
+{'C': 32, 'BV': 64, 'num_warps': 4, 'num_stages': 3, 'ms': 1.6027}
+{'C': 32, 'BV': 64, 'num_warps': 8, 'num_stages': 1, 'ms': 2.4452}
+{'C': 32, 'BV': 64, 'num_warps': 8, 'num_stages': 2, 'ms': 2.4452}
+{'C': 32, 'BV': 64, 'num_warps': 8, 'num_stages': 3, 'ms': 2.4444}
+{'C': 64, 'BV': 32, 'num_warps': 4, 'num_stages': 1, 'ms': 2.2535}
+{'C': 64, 'BV': 32, 'num_warps': 4, 'num_stages': 2, 'ms': 2.253}
+{'C': 64, 'BV': 32, 'num_warps': 4, 'num_stages': 3, 'ms': 2.253}
+{'C': 64, 'BV': 32, 'num_warps': 8, 'num_stages': 1, 'ms': 2.4073}
+{'C': 64, 'BV': 32, 'num_warps': 8, 'num_stages': 2, 'ms': 2.4076}
+{'C': 64, 'BV': 32, 'num_warps': 8, 'num_stages': 3, 'ms': 2.4076}
+{'C': 64, 'BV': 64, 'num_warps': 4, 'num_stages': 1, 'ms': 2.4125}
+{'C': 64, 'BV': 64, 'num_warps': 4, 'num_stages': 2, 'ms': 2.4124}
+{'C': 64, 'BV': 64, 'num_warps': 4, 'num_stages': 3, 'ms': 2.4119}
+{'C': 64, 'BV': 64, 'num_warps': 8, 'num_stages': 1, 'ms': 2.7072}
+{'C': 64, 'BV': 64, 'num_warps': 8, 'num_stages': 2, 'ms': 2.7069}
+{'C': 64, 'BV': 64, 'num_warps': 8, 'num_stages': 3, 'ms': 2.7072}
+best: {'C': 32, 'BV': 32, 'num_warps': 4, 'num_stages': 2, 'ms': 1.3816}
+usage: bench_gdn.py [-h] [--correct] [--bench] [--sweep]
+
+options:
+  -h, --help  show this help message and exit
+  --correct
+  --bench
+  --sweep

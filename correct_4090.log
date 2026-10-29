@@ -1,0 +1,17 @@
+/home/test/attention-lab/venv/lib/python3.12/site-packages/torch/_subclasses/functional_tensor.py:377: UserWarning: Failed to initialize NumPy: No module named 'numpy' (Triggered internally at /__w/pytorch/pytorch/torch/csrc/utils/tensor_numpy.cpp:82.)
+  cpu = _conversion_method_template(device=torch.device("cpu"))
+/home/test/attention-lab/venv/lib/python3.12/site-packages/triton/knobs.py:504: UserWarning: TRITON_DEFAULT_FP_FUSION is unset: defaulting to FP fusion ENABLED for backward compatibility in Triton 3.9. The default will change to DISABLED in Triton 3.10; set TRITON_DEFAULT_FP_FUSION=1 to keep fusion enabled or =0 to adopt the new default early and silence this warning.
+  warn_once(FP_FUSION_DEFAULT_WARNING)
+[correct] T=256 B=2 H=4 K=128 V=128 gate=0.05
+  output: max abs err=7.3290e-04  rel=5.4907e-04
+  state : max abs err=3.3045e-04  rel=2.5851e-04
+  PASS
+[correct] T=256 B=2 H=4 K=128 V=128 gate=0.3
+  output: max abs err=5.2005e-04  rel=5.5479e-04
+  state : max abs err=2.4700e-04  rel=3.0796e-04
+  PASS
+[correct] T=512 B=2 H=4 K=64 V=64 gate=0.1
+  output: max abs err=8.8727e-04  rel=5.8679e-04
+  state : max abs err=3.6144e-04  rel=2.7666e-04
+  PASS
+全部正确性: PASS

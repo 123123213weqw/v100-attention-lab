@@ -1,0 +1,10 @@
+/home/test/attention-lab/venv/lib/python3.12/site-packages/torch/_subclasses/functional_tensor.py:377: UserWarning: Failed to initialize NumPy: No module named 'numpy' (Triggered internally at /__w/pytorch/pytorch/torch/csrc/utils/tensor_numpy.cpp:82.)
+  cpu = _conversion_method_template(device=torch.device("cpu"))
+[fla] 不可用: ModuleNotFoundError: No module named 'fla'
+/home/test/attention-lab/venv/lib/python3.12/site-packages/triton/knobs.py:504: UserWarning: TRITON_DEFAULT_FP_FUSION is unset: defaulting to FP fusion ENABLED for backward compatibility in Triton 3.9. The default will change to DISABLED in Triton 3.10; set TRITON_DEFAULT_FP_FUSION=1 to keep fusion enabled or =0 to adopt the new default early and silence this warning.
+  warn_once(FP_FUSION_DEFAULT_WARNING)
+{"B": 2, "T": 1024, "H": 16, "K": 128, "V": 128, "ours_mode": "autotune", "ours_ms": 0.8162, "sdpa_mha_ms": 0.1642}
+{"B": 2, "T": 4096, "H": 16, "K": 128, "V": 128, "ours_mode": "autotune", "ours_ms": 3.247, "sdpa_mha_ms": 1.8892}
+{"B": 2, "T": 16384, "H": 16, "K": 128, "V": 128, "ours_mode": "autotune", "ours_ms": 13.006, "sdpa_mha_ms": 29.7919}
+{"B": 4, "T": 4096, "H": 16, "K": 128, "V": 128, "ours_mode": "autotune", "ours_ms": 5.7784, "sdpa_mha_ms": 3.7525}
+已写入 bench_results.json

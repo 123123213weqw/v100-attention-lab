@@ -1,0 +1,44 @@
+{
+  "results": [
+    {
+      "B": 2,
+      "T": 1024,
+      "H": 16,
+      "K": 128,
+      "V": 128,
+      "ours_mode": "autotune",
+      "ours_ms": 0.8162,
+      "sdpa_mha_ms": 0.1642
+    },
+    {
+      "B": 2,
+      "T": 4096,
+      "H": 16,
+      "K": 128,
+      "V": 128,
+      "ours_mode": "autotune",
+      "ours_ms": 3.247,
+      "sdpa_mha_ms": 1.8892
+    },
+    {
+      "B": 2,
+      "T": 16384,
+      "H": 16,
+      "K": 128,
+      "V": 128,
+      "ours_mode": "autotune",
+      "ours_ms": 13.006,
+      "sdpa_mha_ms": 29.7919
+    },
+    {
+      "B": 4,
+      "T": 4096,
+      "H": 16,
+      "K": 128,
+      "V": 128,
+      "ours_mode": "autotune",
+      "ours_ms": 5.7784,
+      "sdpa_mha_ms": 3.7525
+    }
+  ]
+}

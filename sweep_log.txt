@@ -1,0 +1,16 @@
+{'C': 32, 'BV': 32, 'num_warps': 4, 'ms': 86.7602}
+{'C': 32, 'BV': 32, 'num_warps': 8, 'ms': 59.8453}
+C=32 BV=64 w=4: RuntimeError
+{'C': 32, 'BV': 64, 'num_warps': 8, 'ms': 83.4863}
+C=64 BV=32 w=4: RuntimeError
+{'C': 64, 'BV': 32, 'num_warps': 8, 'ms': 78.7927}
+C=64 BV=64 w=4: RuntimeError
+C=64 BV=64 w=8: RuntimeError
+best: {'C': 32, 'BV': 32, 'num_warps': 8, 'ms': 59.8453}
+usage: bench_gdn.py [-h] [--correct] [--bench] [--sweep]
+
+options:
+  -h, --help  show this help message and exit
+  --correct
+  --bench
+  --sweep
