@@ -1,0 +1,47 @@
+{
+  "v2_correct_on_v100": true,
+  "rows": [
+    {
+      "T": 1024,
+      "kda": 8.2308,
+      "gated_delta_product": "AssertionError: ",
+      "momentum_delta_rule": 26.2183,
+      "precond_kda": 8.4375,
+      "gdn2": "AssertionError: b (channel-wise erase gate) must have shape [B, T, H, K] mat",
+      "linear_attn": 13.4066,
+      "simple_gla": 15.6551,
+      "based": "AssertionError: only support feature dimension up to 16.",
+      "rebased": 70.8471,
+      "hgrn": 0.4823,
+      "lightning_attn": 15.6159,
+      "rwkv6": 0.9704,
+      "rwkv7": 1.3981,
+      "mesa_net": "OutOfResources: out of resource: shared memory, Required: 163840, Hardware l",
+      "comba": "AttributeError: 'NoneType' object has no attribute 'shape'",
+      "gdn_ours_v1": 61.9399,
+      "gdn_ours_v2": 56.2899,
+      "mha_sdpa": "ValueError: not enough values to unpack (expected 6, got 5)"
+    },
+    {
+      "T": 4096,
+      "kda": 31.5888,
+      "gated_delta_product": "AssertionError: ",
+      "momentum_delta_rule": "OutOfMemoryError: CUDA out of memory. Tried to allocate 64.00 MiB. GPU 0 has a",
+      "precond_kda": 32.9957,
+      "gdn2": "AssertionError: b (channel-wise erase gate) must have shape [B, T, H, K] mat",
+      "linear_attn": 50.5252,
+      "simple_gla": 58.6103,
+      "based": "AssertionError: only support feature dimension up to 16.",
+      "rebased": 897.2239,
+      "hgrn": 0.6956,
+      "lightning_attn": 58.5868,
+      "rwkv6": 3.6901,
+      "rwkv7": 5.4782,
+      "mesa_net": "OutOfResources: out of resource: shared memory, Required: 163840, Hardware l",
+      "comba": "AttributeError: 'NoneType' object has no attribute 'shape'",
+      "gdn_ours_v1": 245.9151,
+      "gdn_ours_v2": 224.9865,
+      "mha_sdpa": "ValueError: not enough values to unpack (expected 6, got 5)"
+    }
+  ]
+}
